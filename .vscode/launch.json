@@ -1,0 +1,37 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: FastAPI",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "src.api:app",          // Adjust according to your app location
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "8888",
+                "--reload"              // Optional: Use --reload for auto-reloading during development
+            ],
+            "jinja": true,
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"  // Set PYTHONPATH if needed
+            },
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Tests",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "cwd": "${workspaceFolder}",  // Set the working directory to the tests folder
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"  // Set the PYTHONPATH here as well
+            },
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
