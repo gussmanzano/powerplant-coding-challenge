@@ -7,17 +7,17 @@
             "request": "launch",
             "module": "uvicorn",
             "args": [
-                "src.api:app",          // Adjust according to your app location
+                "src.api:app",          
                 "--host",
                 "0.0.0.0",
                 "--port",
                 "8888",
-                "--reload"              // Optional: Use --reload for auto-reloading during development
+                "--reload"              
             ],
             "jinja": true,
             "console": "integratedTerminal",
             "env": {
-                "PYTHONPATH": "${workspaceFolder}/src"  // Set PYTHONPATH if needed
+                "PYTHONPATH": "${workspaceFolder}/src" 
             },
             "justMyCode": true
         },
@@ -26,9 +26,9 @@
             "type": "python",
             "request": "launch",
             "module": "pytest",
-            "cwd": "${workspaceFolder}",  // Set the working directory to the tests folder
+            "cwd": "${workspaceFolder}",  
             "env": {
-                "PYTHONPATH": "${workspaceFolder}"  // Set the PYTHONPATH here as well
+                "PYTHONPATH": "${workspaceFolder}" 
             },
             "console": "integratedTerminal",
             "justMyCode": true
