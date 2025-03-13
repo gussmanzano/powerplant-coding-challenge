@@ -91,7 +91,7 @@ cd powerplant-coding-challenge
     ```
 
 ## Project Structure
-
+```
 project-root/
 ├── Dockerfile
 ├── README.md
@@ -109,3 +109,4 @@ project-root/
 │   │   │   ├── response3.json
 │   └── └── test_api.py
 └── payload.json
+```
